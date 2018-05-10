@@ -12,10 +12,10 @@ namespace Hello
             //Added this project to GITHUB
 
             SpeechSynthesizer synth = new SpeechSynthesizer();
-
+            synth.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Teen);
             Console.WriteLine("Your Name");
             String name = Console.ReadLine();
-            Console.WriteLine("Hello " + name+"Welcome to C# Programming");
+            Console.WriteLine("Hello " + name+"! Welcome to C# Programming");
             synth.Speak("Hello "+name+"! Welcome to C# Programming");
             Console.WriteLine("How many hours of sleep did you get last night ??");
             synth.Speak("How many hours of sleep did you get last night");
