@@ -13,6 +13,7 @@ namespace Hello
 
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Teen);
+            synth.Speak("Can you Type in Your Name please ?");
             Console.WriteLine("Your Name");
             String name = Console.ReadLine();
             Console.WriteLine("Hello " + name+"! Welcome to C# Programming");
