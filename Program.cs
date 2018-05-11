@@ -12,9 +12,9 @@ namespace Hello
             //Added this project to GITHUB
 
             SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Teen);
+            synth.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Teen);
             synth.Speak("Can you Type in Your Name please ?");
-            Console.WriteLine("Your Name");
+            Console.WriteLine("Can you Type in Your Name please ?");
             String name = Console.ReadLine();
             Console.WriteLine("Hello " + name+"! Welcome to C# Programming");
             synth.Speak("Hello "+name+"! Welcome to C# Programming");
@@ -23,12 +23,12 @@ namespace Hello
             int hourofSleep = int.Parse(Console.ReadLine());
             if(hourofSleep >=8)
             {
-                Console.WriteLine("You Have Enough Sleep");
+                Console.WriteLine("Good! You have Enough Sleep");
                 synth.Speak("Good! You have Enough Sleep");
             }
             else
             {
-                Console.WriteLine("You need more sleep");
+                Console.WriteLine(name + " ! You need to Rest more!");
                 synth.Speak(name+" ! You need to Rest more!");
             }
         }
